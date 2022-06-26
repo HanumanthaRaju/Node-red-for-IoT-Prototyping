@@ -1,4 +1,4 @@
-# Exercise 3: Printing date
+# Exercise 03: Printing date
 1. Use the flow from Exercise 2
 2. Add a Function node: The Function node allows you to pass each message though a JavaScript function.
 3. Delete the existing wire (select it and press delete on the keyboard).
