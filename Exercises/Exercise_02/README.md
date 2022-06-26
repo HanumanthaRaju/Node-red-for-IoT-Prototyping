@@ -1,24 +1,20 @@
-# Exercise 01: Understand Node-RED platform
-Node-RED is a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways. It provides a browser-based editor that makes it easy to wire together flows using the wide range of nodes in the palette that can be deployed to its runtime in a single- click.
-    • Browser-based flow editing- 
-    • Built on Node.js
-    • Social Development 
+# Exercise 02: Your First Flow
+The best way to explain “a flow” is by creating one. In this mini flow, we are going to inject a value into our debug window
+    1. Open the browser
+    2. In the address line enter http://localhost:1880
+    3. Drag and drop “Inject node” from the nodes library into the flow editor (Once you have chosen the inject node, you should set some general explanation about its functionality in the info pane-no need to read that now).
+    4. Drag and drop a “Debug node” from the nodes library into the flow editor.
+    5. Crate a pipe between the inject and debug nodes by drawing a connection between their small grey rounded rectangles.
+    6. Change from the info pane to the debug pane (Upper right).
+    7. Deploy (=start) your flow.
+    8. Once deployed, press the left blue rectangle that’s attached to the inject node. Check what’s happening in the debug pane. You should see numbers appear in the sidebar. By default, the Inject node uses the number of milliseconds since January 1st, 1970 as its payload.
 
-# Installing node.js
-    • Download Node.js from the link https://nodejs.org for windows x86 i.e 10.16.3 LTS version
-    • Install it locally in your system.
-    • Open the command prompt and display the versions of nodejs and npm as shown below.
-![outcome](./nodejs.jpg)
+# Flow Diagram
+![outcome](./input.jpg)
 
-# Installig Node-red
-    • Run the below command in the command console.
-        npm install –g –unsafe-perm nodered
-    • After complete installation run the below command and note down the address given as shown below.
-        node-red
-![outcome](./nodered.jpg)
+# Output
+![outcome](./output.jpg)
 
-# Open the browser
-To access node-red from browser, give the link as: http://localhost:1880
 
 
 
