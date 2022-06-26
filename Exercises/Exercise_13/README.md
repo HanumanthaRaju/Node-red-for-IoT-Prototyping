@@ -1,11 +1,20 @@
-# Exercise 4: To Setup a basic web server in Node-Red
+# Exercise 13: Creating dashboard-Error checking criterion
+1.	Add inject, function, debug, gauge, chart, slider nodes an audio out nodes.
+2.	Double click on all the nodes and to the same group, Add to a group, we dont have a tab, create it and call it as OSParameters and group as OSParameters.
+3.	For the function node, add this code to generate random numbers
+msg.payload = Math.round(Math.random(50)*30);
+return msg;
+4.	For the Second function node, add this code
 
-1.	From the input panel, choose http node
-2.	Change the properties of your http node so that it will respond to GET requests to /mypage from a web browser.
-3.	Add a template node (from functional panel), and add a http response node from the output panel.
-4.	Write your flow together as shown below:
-5.	Deploy your flow
-6.	Once deployed, open a separate browser window enter localhost:1880/mypage
+if(msg.payload >= "150")
+{
+    msg.payload = "Too High!";
+}
+return msg;
+
+5.	If random number is greater than 150, TOO high message is popped out from an audio node.
+6.	Deploy it.
+7.	Access the dashboard in the URL: http://localhost:1880/ui
 
 
 # Flow Diagram:
