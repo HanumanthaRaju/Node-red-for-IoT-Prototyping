@@ -1,4 +1,4 @@
-# Exercise 17: Develop a simple dashboard showing bid and ask prices for symbol BTCUSDT
+# Exercise 18: Develop a dashboard showing bid and ask prices for different types of crypto currencies
 
 # Flow Diagram:
 ![outcome](./input.jpg)
