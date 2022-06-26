@@ -31,7 +31,7 @@ The site offers a number of other options that you may want to play around with 
 ![outcome](./input.jpg)
 
 # Output:
-![outcome](./output.jpg)
+![outcome](./output.JPG)
 
 ## Conclusion:
 This flow is automatically triggered every 1 minutes and retrieves data from a url. It parses the data and displays in the Debug sidebar. It also checks the magnitude value in the data and branches the flow for any messages with a magnitude greater than, or equal to, 7. The payloads of such messages are modified and displayed in the Debug sidebar.
