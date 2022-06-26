@@ -1,18 +1,22 @@
-# Exercise 02: Your First Flow
-The best way to explain “a flow” is by creating one. In this mini flow, we are going to inject a value into our debug window
-1. Open the browser
-2. In the address line enter http://localhost:1880
-3. Drag and drop “Inject node” from the nodes library into the flow editor (Once you have chosen the inject node, you should set some general explanation about its functionality in the info pane-no need to read that now).
-4. Drag and drop a “Debug node” from the nodes library into the flow editor.
-5. Crate a pipe between the inject and debug nodes by drawing a connection between their small grey rounded rectangles.
-6. Change from the info pane to the debug pane (Upper right).
-7. Deploy (=start) your flow.
-8. Once deployed, press the left blue rectangle that’s attached to the inject node. Check what’s happening in the debug pane. You should see numbers appear in the sidebar. By default, the Inject node uses the number of milliseconds since January 1st, 1970 as its payload.
+# Exercise 3: Printing date
+1. Use the flow from Exercise 2
+2. Add a Function node: The Function node allows you to pass each message though a JavaScript function.
+3. Delete the existing wire (select it and press delete on the keyboard).
+4. Wire a Function node in between the Inject and Debug nodes.Double-click on the Function node to bring up the edit dialog.Copy the following code into the function field:
+// Create a Date object from the payload
+var date = new Date(msg.payload);
+// Change the payload to be a formatted Date string 
+msg.payload = date.toString();
+// Return the message so it can be sent on 
+return msg;
+5. Click done to close the edit dialog and then click the deploy button.
+6. Now when you click the Inject button, the messages in the sidebar will now be formatted is readable timestamps.
 
-# Flow Diagram
+
+# Flow Diagram:
 ![outcome](./input.jpg)
 
-# Output
+# Output:
 ![outcome](./output.jpg)
 
 
