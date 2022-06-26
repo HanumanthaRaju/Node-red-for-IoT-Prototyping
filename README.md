@@ -14,4 +14,6 @@ When doing these exercises, please use all the documentation and resources you n
 4. For each exercise, read the README thoroughly before starting any work.
 5. Use this to make sure you haven't missed any important details in your implementation.
 
+# Refer to the PPT for further understanding of Node-red
+
 
