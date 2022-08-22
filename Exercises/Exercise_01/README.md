@@ -12,7 +12,7 @@ Node-RED is a programming tool for wiring together hardware devices, APIs and on
 
 # Installig Node-red
     • Run the below command in the command console.
-        npm install –g –unsafe-perm nodered
+        npm install –g –unsafe-perm node-red
     • After complete installation run the below command and note down the address given as shown below.
         node-red
 ![outcome](./nodered.jpg)
